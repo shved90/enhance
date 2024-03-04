@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #252525;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--softWhite);
+}
+
+header {
+    margin-left: 400px;
+    padding: var(--space-3);
+    font-size: var(--text-3);
+}
+
+#mainContent {
+
+    padding: var(--space-3);
+    margin-left: 400px;
+
+
+    & article {
+        font-size: var(--text-0);
+    }
+}
+
+.pageStyle-green {
+    & article {
+        & a {
+            color: var(--mainGreen);
+        }
+    }
+}
+
+.pageStyle-blue {
+    & article {
+        & a {
+            color: var(--mainBlue);
+        }
+    }
+}
+
+.pageStyle-violet {
+    & article {
+        & a {
+            color: var(--mainViolet);
+        }
+    }
+}
+
+.blue{
+    color: var(--mainBlue) !important;
+}
+
+#mainNav {
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    & ul {
+        height: 100%;
+        width: 100%;
+        border-right: 1px solid var(--softWhite);
+
+        & li {
+            height: 33.33333%;
+            border-bottom: 1px solid var(--softWhite);
+            transition: ease-in-out 0.2s all;
+
+            &:nth-child(1) {
+                transition: ease-in-out 0.2s all;
+
+                &:hover {
+                    transition: ease-in-out 0.2s all;
+                    background-color: var(--transGreen);
+                }
+
+                &.active {
+                    transition: ease-in-out 0.2s all;
+                    background-color: var(--mainGreen);
+                }
+            }
+
+            &:nth-child(2) {
+                transition: ease-in-out 0.2s all;
+
+                &:hover {
+                    transition: ease-in-out 0.2s all;
+                    background-color: var(--transBlue);
+                }
+
+                &.active {
+                    transition: ease-in-out 0.2s all;
+                    background-color: var(--mainBlue);
+                }
+            }
+
+            &:nth-child(3) {
+                transition: ease-in-out 0.2s all;
+
+                &:hover {
+                    transition: ease-in-out 0.2s all;
+                    background-color: var(--transViolet);
+                }
+
+                &.active {
+                    transition: ease-in-out 0.2s all;
+                    background-color: var(--mainViolet);
+                }
+            }
+
+            &:last-child {
+                border: none;
+            }
+        }
+
+    }
+
+    & a {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

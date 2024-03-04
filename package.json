@@ -1,0 +1,55 @@
+{
+  "name": "enhance-app",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "npx enhance dev",
+    "lint": "eslint ./app/**/*.mjs --fix",
+    "enhance": "enhance"
+  },
+  "dependencies": {
+    "@enhance/arc-plugin-enhance": "latest",
+    "@enhance/cli": "latest"
+  },
+  "devDependencies": {
+    "@enhance/custom-element": "^1.2.1",
+    "@enhance/element": "^1.4.3",
+    "@enhance/types": "latest",
+    "@enhance/styles": "^6.1.8",
+    "eslint": "^8.52.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+      "indent": [
+        "error",
+        "tab"
+      ],
+      "linebreak-style": [
+        "error",
+        "windows"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "error",
+        "never"
+      ],
+      "no-empty": "warn",
+      "no-cond-assign": [
+        "error",
+        "always"
+      ],
+      "for-direction": "off"
+    },
+    "ignorePatterns": [],
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 2022
+    }
+  }
+}
